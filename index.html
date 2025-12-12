@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marc | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- ========== LOGIN SCREEN ========== -->
+    <div id="loginPage" class="login-card">
+      <h1 class="login-title">Portfolio Login</h1>
+      <p class="login-subtitle">Please log in to view your portfolio website.</p>
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" name="username" placeholder="Enter username or email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required minlength="4"/>
+          <div class="helper-text">
+            Sample credentials for testing:<br />
+            <strong>Username:</strong> Marc Tinaco<br />
+            <strong>Password:</strong> 102938
+          </div>
+        </div>
+        <div id="loginError" class="error-message">Invalid username or password.</div>
+        <button type="submit" class="btn btn-primary" style="margin-top:15px;">Log In</button>
+        <div id="loginSuccess" class="success-message">Login successful! Redirecting...</div>
+      </form>
+    </div>
+
+    <!-- ========== PORTFOLIO SCREEN ========== -->
+    <div id="portfolioPage" class="portfolio">
+      <header>
+        <div class="logo">Marc  • Portfolio</div>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="logoutBtn" class="btn-logout">Logout</button>
+      </header>
+
+      <main>
+        <div id="logoutMessage" class="logout-message">You have been logged out successfully.</div>
+
+        <!-- Home Section -->
+        <section id="home">
+          <div class="hero">
+            <div class="hero-text">
+              <div class="hero-badge">Welcome to my portfolio 👋</div>
+              <h1>Hi, I'm <span>Marc</span></h1>
+              <p class="hero-tagline">
+                I am passionate about technology, problem solving, and continuous learning.
+              </p>
+            </div>
+            <div class="hero-image">
+              <div class="hero-avatar">MT</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+           I am 18 year old student currently studying at Caraga State University, Cabadbaran Campus.
+          </p>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+          <h2>Education</h2>
+          <div class="about-grid">
+            <div class="card">
+              <h3>High School</h3>
+              <p>Completed at Candelaria Institute Of Technology Of Cabadbaran Inc., 2019-2025</p>
+            </div>
+            <div class="card">
+              <h3>College</h3>
+              <p>I am Currently taking up Information Technology, I aim to learn more about coding and build skills for the future.</p>
+            </div>
+          </div>
+        </section>
+         <!-- Projects -->
+         
+        <section id="Projects">
+  <h2>Projects</h2>
+  <div class="about-grid">
+
+    <div class="card">
+      <h3>Grade 12 Research Project</h3>
+
+      <img src="/storage/emulated/0/ITE 10 FINAL PROJECT/received_1346724120018877.jpeg"
+           alt="Grade 12 research project about cassava starch as bioplastic"
+           width="250">
+      <p>
+        This is our research project in Grade 12. Our study focuses on 
+        <strong>Cassava Starch as a Potential Bioplastic</strong>, exploring how cassava can be used as an eco-friendly
+        alternative to traditional plastic.
+      </p>
+    </div>
+
+  </div>
+</section>
+        
+        
+        
+        <section id="Hobbies">
+          <h2>Hobbies</h2>
+          <div class="about-grid">
+            <div class="card">
+              <h3>I like playing Online games, basketball.</h3>
+              <p>
+                  I also like watching anime and Cooking simple dish.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="about-grid">
+          <div class="card">
+            <h3>Programming Knowledge</h3>
+            <p>Currently improving and learning HTML, CSS, JavaScript, Python, and Java</p>
+           </div>
+            
+            <div class="card">
+              <h3>Skills</h3>
+              <p>Teamwork,Flexible,Positive,and Observant </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <div class="contact-grid">
+            <div class="contact-form">
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="contactName">Name</label>
+                  <input type="text" id="contactName" name="contactName" required placeholder="Your name" />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email</label>
+                  <input type="email" id="contactEmail" name="contactEmail" required placeholder="your@email.com" />
+                </div>
+                <div class="form-group">
+                  <label for="contactMessage">Message</label>
+                  <textarea id="contactMessage" name="contactMessage" rows="4" required placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <div id="contactError" class="error-message">Please complete all fields.</div>
+                <div id="contactSuccess" class="success-message">Thank you! Your message has been recorded.</div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <p><span>Email:</span> marcvissam.tinaco@gmail.com</p>
+              <p><span>Location:</span> P-2 Brgy.7, Cabadbaran City</p>
+              <p><span>GitHub:</span> <a href="#">github.com/marcvissamtinaco-Csucc</a></p>
+              <p><span>Goal:</span> My goal is to graduate from college and make a meaningful and successful life..</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © <span id="year"></span> Marc • Portfolio Project. All rights reserved.
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
